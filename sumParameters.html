@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>using arguments object in function</title>
+</head>
+<body>
+<script type="text/javascript">
+	function sum() {
+		var result = 0;
+		for (var i = 0; i < arguments.length; i++) {
+			result += arguments[i];
+		}
+		return(result);
+	}
+	document.writeln(sum(12,43,2,23,54));
+</script>
+
+</body>
+</html>

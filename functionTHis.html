@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	window.myName = 'XML';
+	function printName() {
+		document.writeln(this.myName);
+	}
+
+	printName(); //XML
+
+	var o = {myName: 'HTML'};
+	o.printNameForMyObject = printName;
+	o.printNameForMyObject(); //HTML
+</script>

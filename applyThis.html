@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function writeLineForAll(label) {
+		document.writeln(label + ":" + this.name);
+	}
+
+	var book1 = {
+		name: "JavaScript"
+	};
+
+	var book2 = {
+		name : "CSS"
+	};
+
+	var name = "HTML";
+
+	writeLineForAll.apply(this, ["global"]);
+	writeLineForAll.apply(book2, ["book2"]);
+</script>
+
+</body>
+</html>

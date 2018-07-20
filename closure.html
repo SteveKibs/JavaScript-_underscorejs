@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var outer = 'outer';
+		var copy;
+		function outerFn() {
+			var inner = 'inner';
+			function innerFn(param) {
+				document.writeln(outer);  // outer
+				document.writeln(inner);  // inner
+				document.writeln(param);  // copy
+				document.writeln(magic); // Magic
+			}
+			copy = innerFn;
+		}
+		document.writeln(magic);  // undefined
+
+		var magic = "Magic";
+		outerFn();
+		copy("copy");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

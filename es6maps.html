@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var founders = new Map();
+		founders.set("facebook", "mark");
+		founders.set("google", "larry");
+		founders.size; // 2
+		founders.get("twitter"); 
+		founders.has("yahoo"); // false
+		for(var [key, value] of founders) {
+			document.writeln(key + " founded by " + value);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function Person() {}
+            Person.prototype.cry = function() {
+                return("Crying");
+            };
+            function Child(){}
+            Child.prototype = {
+                cry: Person.prototype.cry
+            };
+            var aChild = new Child();
+            document.writeln(aChild instanceof Child); // true
+            document.writeln(aChild instanceof Person); // false
+            document.writeln(aChild instanceof Object); // true
+            document.writeln(aChild.cry()); // crying
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+var values = [1,2,3,4,5];
+var sum = values.reduce(function(prev, cur, index, array) {
+	return prev + cur;
+});
+document.writeln(sum); //15
+
+var sum = values.reduceRight(function(prev, cur, index, array) {
+	return prev + cur;
+});
+document.writeln(sum); //15
+
+</script>
+</body>
+</html>

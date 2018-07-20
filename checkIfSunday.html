@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check if first day is sunday between 2014 and 2050</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	
+	for (var year = 2014; year <= 2050; year++) {
+		var d = new new Date(year, 0, 1);
+		if (d.getDay()=== 0) {
+			document.writeln('1st Januar is being a Sunday ' + year + '<br>');
+		}
+	}
+
+</script>
+
+</body>
+</html>

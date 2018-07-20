@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let data = true;
+	if (true) { //enter new  scope, TDZ (Temporal Dead Zone) starts
+		//Uninitialized binding for 'data' is created
+		console.log(data); //ReferenceError
+		let data;  //TDZ ends, 'data' is initialized with 'undefined'
+
+	}
+	console.log(data);  //true
+</script>
+
+</body>
+</html>

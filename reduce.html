@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		var nums = [1, 45, 2, 16, 9, 12];
+		var sum = 0;
+		for (var i = 0; i < nums.length; i++) {
+			sum +=nums[i];
+		}
+		document. writeln(sum);
+
+
+		//using reduce()
+		var sum = nums.reduce(function(n1,n2) {
+			return n1 + n2;
+		});
+		document.writeln(sum);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

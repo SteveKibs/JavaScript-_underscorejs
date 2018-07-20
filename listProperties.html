@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lists properties of an object</title>
+</head>
+<body>
+<script type="text/javascript">
+	var student = {
+		name: "David Rayy",
+		sclass: "VI",
+		rollno: 12
+	};
+
+	function _keys(obj) {
+		if (!isObject(obj)) {
+			return [];
+		}
+		if (Object.keys) {
+			return(Object.keys(obj));
+		}
+		var keys = [];
+		for (var key in obj)
+			if (_.has(obj, key)) {
+				keys.push(key);
+			}
+			return keys;
+	}
+	document.writeln(student["name"]);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var Person = {};
+	Person.name = "Steve";
+	Person.age = 45;
+	Person.address = {
+		location:"Nairobi",
+		box: 3422,
+		code: 00221,
+		residence: {
+			county: "Kiambu",
+			ward: "Lari",
+		}
+	};
+	document.writeln(Person.address.residence.ward);
+</script>
+
+</body>
+</html>

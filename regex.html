@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var pattern = /[abc]/;
+		document.writeln(pattern.test('a')); // true
+		document.writeln(pattern.test('d')); // false
+
+		var pattern = /[^abc]/;
+		document.writeln(pattern.test('a')) // false
+		document.writeln(pattern.test('d'));  //true
+
+		var pattern = /[0-5]/;
+		document.writeln(pattern.test(3));  //true
+		document.writeln(pattern.test(12345)); // true
+		document.writeln(pattern.test(9));  // false
+		document.writeln(/[0123456789]/.test("This is the year 2018")); // true
+
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

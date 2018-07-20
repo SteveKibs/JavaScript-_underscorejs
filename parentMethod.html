@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>function call</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+	function Parent(firstName, lastName, age) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.changeName = function (name) {
+			this.lastName = name;
+		};
+
+	}
+	var myMother = new Parent('Anne', 'Mary', 35);
+	myMother.changeName('Doe');
+	document.getElementById('demo').innerHTML = 'My Mothers last name is ' + myMother.lastName;
+</script>
+
+</body>
+</html>

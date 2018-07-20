@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let arr = [];
+	for (var i = 0; i < 3; i++) {
+		arr.push(function () {
+			return i;
+		});
+	}
+	let value = arr[0]();
+	document.writeln(value);
+</script>
+
+</body>
+</html>

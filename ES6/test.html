@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script type="text/javascript">
+		function mark() {
+			var mark = report.marks.value;
+			var std = report.name.value;
+		
+		if (mark > 90) {
+
+			var fb = document.getElementById('ans').innerHTML = std + " got an A"; 
+		}
+		else if (mark >= 75 && mark <= 80) {
+			var fb = document.getElementById('ans').innerHTML = std + " got a B+"; 
+		}
+		}
+		
+		
+	</script>
+</head>
+<body>
+	<form name="report" action="">
+		<h1>Report Form</h1>
+	<label for="name">Enter Student Name:</label>
+	<input type="text" name="name">
+	<label for="marks">Enter Marks:</label>
+	<input type="text" name="marks" onchange="mark()">
+	<input type="submit" onclick="mark()" name="">
+	<h1 id="ans"></h1>
+	</form>
+	
+
+</body>
+</html>

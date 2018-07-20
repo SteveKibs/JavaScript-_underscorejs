@@ -1,0 +1,28 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Replace text</title>
+</head>
+<body>
+<p id="demo">Please visit Microsoft</p>
+<button onclick="myFunction()">Try it</button>
+<script type="text/javascript">
+function myFunction(){
+
+
+	var str = document.getElementById('demo').innerHTML;
+	var str1 = str.replace("Microsoft","Kenya");
+	 document.getElementById('demo').innerHTML = str1.toUpperCase();
+	//up.toUpperCase();
+	document.getElementById('demo1').innerHTML = text3;
+}
+var text1 = "Hello";
+var text2 = "World";
+text3 = text1.concat(" ", text2);
+
+</script>
+<p id="demo1"> </p>
+
+</body>
+</html>

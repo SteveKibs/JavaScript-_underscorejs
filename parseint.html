@@ -1,0 +1,41 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The global JavaScript function NUmber()</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+//var d = new Date(86400000);
+//var d = new Date(99, 5, 24, 11, 33, 30, 0)
+var d = new Date();
+	document.getElementById('demo').innerHTML = 
+	parseInt("10") + "<br>" + 
+	parseInt("10 6") + "<br>" + 
+	parseFloat("10.44 20 ") + "<br>" +
+	Number.MIN_VALUE + "<br>" +
+	Math.PI + "<br>" +
+	Math.round(4.7) + "<br>" +
+	Math.pow(8, 3) + "<br>" +
+	Math.sqrt(144) + "<br>" +
+	Math.abs(-4.8) + "<br>" +
+	Math.ceil(3.45) + "<br>" +
+	Math.floor(4.88876) + "<br>" +
+	Math.sin(90 * Math.PI / 180) + "<br>" +
+	Math.cos(0 * Math.PI / 180) + "<br>" +
+	Math.min(0, 50, 30, 20, -8, -200) + "<br>" +
+	Math.max(0, 150, 30, 20, -8, -200) + "<br>" +
+	Math.random() + "<br>" +
+	Math.floor(Math.random() * 10);
+	function getInt(min, max){
+		return Math.floor(Math.random() * (max - min)) + min
+	}
+</script>
+<button onclick="document.getElementById('demo1').innerHTML = d.getDay();
+//getInt(0, 10)">Click me</button>
+<p id="demo1"></p>
+
+
+</body>
+</html>

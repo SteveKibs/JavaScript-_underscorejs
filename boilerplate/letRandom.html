@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	if (true) {
+		console.log(typeof anUndeclaredVariable); // 'undefined'
+		console.log(typeof random);  //ReferenceError (TDZ)
+
+		let random;
+	}
+</script>
+
+</body>
+</html>

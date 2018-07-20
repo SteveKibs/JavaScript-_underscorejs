@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	var text = 'cat, bat, sat, fat';
+	var pattern = /.at/;
+	//same as pattern.exec(text)
+	var matches = text.match(pattern);
+	document.writeln(matches.index);  //0
+	document.writeln(matches[0]);  //'cat'
+	document.writeln(pattern.lastIndex); //0
+</script>

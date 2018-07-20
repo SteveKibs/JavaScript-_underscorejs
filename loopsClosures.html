@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		//wrong method
+		for (var i = 1; i <= 5; i++) {
+			setTimeout(function delay() {
+				document.writeln(i);
+			}, i * 100);
+		}
+
+		//correct method
+		for (var i = 1; i <= 5; i++) {
+			(function(j) {
+				setTimeout(function delay() {
+					
+					document.writeln(j);
+				}, j * 1000)
+			})(i);
+		}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

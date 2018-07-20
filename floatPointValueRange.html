@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float POint value range</title>
+</head>
+<body>
+<script type="text/javascript">
+	var result = Number.MAX_VALUE + Number.MAX_VALUE;
+	document.writeln(result);
+
+document.writeln(Number.MAX_VALUE + '<br>');
+document.writeln(Number.MIN_VALUE + '<br>');
+document.writeln(Number.NEGATIVE_INFINITY + '<br>');
+document.writeln(Number.POSITIVE_INFINITY);
+
+document.writeln('<br><br><br>')
+
+if (Math.sqrt(-2) != Number.NEGATIVE_INFINITY_) {
+	document.writeln("This is not equal to NEGATIVE_INFINITY_");
+}
+else {
+	document.writeln('This is equal to NEGATIVE_INFINITY_');
+
+}
+if (Math.exp(999) <= Number.POSITIVE_INFINITY_) {
+	document.writeln('This is less than POSITIVE_INFINITY_');
+}
+else {
+	document.writeln('This is greater than POSITIVE_INFINITY_');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        var basicServerConfig = (function() {
+            var environment = "production";
+            startupParams = {
+                cacheTimeout: 30,
+                locale: "en_US"
+            };
+            return {
+                init: function() {
+                    document.writeln("Initializing the server");
+                },
+                updateStartup: function(params) {
+                    this.startupParams = params;
+                    document.writeln(this.startupParams.cacheTimeout);
+                    document.writeln(this.startupParams.locale);
+                }
+            };
+        })();
+        basicServerConfig.init(); // initializing. ...
+        basicServerConfig.updateStartup({
+            cacheTimeout: 60,
+            locale: "en_UK"
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

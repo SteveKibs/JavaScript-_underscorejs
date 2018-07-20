@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+var now = new Date();
+document.writeln('Todays date ' + now);
+
+document.writeln('<br>create date in milliseconds<br>');
+var aDate = new Date(1234567890);
+document.writeln(aDate);
+
+document.writeln('<br>create date from string<br>');
+var someDate = new Date('May 25, 1268');
+document.writeln(someDate);
+
+document.writeln('<br>create Date from now<br>');
+var start = Date.now();
+document.writeln(start);
+
+
+//January 1, 2000 at midnight in local time
+var y2k = new Date(2000, 0);
+document.writeln(y2k);
+//May 5, 2005 at 5:55:55 PM local time
+var aDate = new Date(2005, 4, 5, 17, 55, 55);
+document.writeln(aDate+'<br>');
+
+var myDate = new Date();
+//myDate.getHours();
+//myDate.getDay();
+
+document.writeln(myDate.getDay());
+</script>
+</body>
+</html>

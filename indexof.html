@@ -1,0 +1,21 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Please locate where</title>
+</head>
+
+<body>
+<button onclick="myFunction()">Try it</button>
+<p id="p1">Please locate where 'locate' occurs!</p>
+
+<p id="demo"></p>
+<script type="text/javascript">
+	function myFunction(){
+		var str = document.getElementById('p1').innerHTML;
+		var pos = str.lastIndexOf("locate");
+		document.getElementById('demo').innerHTML = pos;
+	}
+</script>
+</body>
+</html>

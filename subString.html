@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> string search from rightside</title>
+</head>
+<body>
+<script type="text/javascript">
+	function dig(str, num) {
+		var a = str.substring(-1, num);
+		var a1 = str.substring(num+1, str.length);
+		return (a +a1);
+
+	}
+	document.writeln(dig("53423", -1));
+</script>
+
+</body>
+</html>

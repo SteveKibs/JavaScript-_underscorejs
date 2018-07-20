@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	var person = {};
+	Object.defineProperty(person, 'name', {
+		configurable: false,
+		value: 'XML'
+	});
+
+	document.writeln(person.name);
+	delete person.name;
+	document.writeln(person.name);
+</script>

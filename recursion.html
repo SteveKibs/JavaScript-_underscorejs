@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>recursive factorial function</title>
+	<script type="text/javascript">
+		function factorial(num) {
+			if (num <= 1) {
+				return 1;
+			}
+			else {
+				return num * factorial(num - 1); // or return num * arguments.callee(num-1)
+			}
+		}
+
+		//code to stop the function
+		var anotherFactorial = factorial;
+		factorial = null;
+		alert(anotherFactorial(4)); //error
+	</script>
+</head>
+<body>
+
+</body>
+</html>

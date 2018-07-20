@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<pre id="results">
+	<code></code>
+</pre>
+<script type="text/javascript">
+	var resultsElement = document.getElementById("results");
+	var firstChild = resultsElement.childNodes[0];
+	document.writeln(firstChild.nodeName);
+
+	var secondChild = resultsElement.childNodes.item(1);
+	document.writeln(secondChild.nodeName);
+</script>
+
+</body>
+</html>

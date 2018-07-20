@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>using function as a value</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+	function myFunction (a, b) {
+		return a * b;
+	}
+	var x = myFunction(4,6) * 2;
+	document.getElementById('demo').innerHTML = x;
+</script>
+</body>
+</html>

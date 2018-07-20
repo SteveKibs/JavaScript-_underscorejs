@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		String.prototype.padLeft = function(width, char) {
+			var result = this;
+			char = char || " ";
+			if (this.length < width) {
+				result = new Array(width - this.length + 1).join(char) + this;
+			}
+			return(result);
+		};
+		document.writeln("abc".padLeft(10, "x"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>using hasOwnProperty method</title>
+</head>
+<body>
+<script type="text/javascript">
+	var book1 = {
+		name : "javascript",
+		writeLine : function() {
+			document.writeln(this.name);
+		}
+	};
+
+	document.writeln("name" in book1);
+	document.writeln(book1.hasOwnProperty("name"));
+	document.writeln(book1.hasOwnProperty("toString"));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>convert degrees to fahrenheit and visavis</title>
+</head>
+<body>
+<form>
+	<input id="num" type="text" name=""> 
+	<label> = </label> <input id="equals" type="text" name=""> 
+
+	<br>
+	<label>Convert From</label><br>
+	<input type="radio" name="degrees" onchange="toDegrees()">Fahrenheit to Degrees<br>
+	<input type="radio" name="degrees" onchange="toFahrenheit()">Degrees to Fahrenheit
+</form>
+<script type="text/javascript">
+function toDegrees() {
+	var num = document.getElementById("num").value;
+	document.getElementById("equals").value = ((num -32) *5 ) / 9;
+}
+function toFahrenheit() {
+	var num = document.getElementById("num").value;
+	document.getElementById("equals").value = ((9 * num) + 160) / 5;
+}
+	
+</script>
+
+</body>
+</html>

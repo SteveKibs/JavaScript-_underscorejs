@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creating new HTML Elements (Nodes)</title>
+</head>
+<body>
+<div id="div1">
+	<p>This is a paragraph</p>
+	<p>This is another paragraph</p>
+</div>
+<script type="text/javascript">
+	var para = document.createElement('p');
+	var node = document.createTextNode('This is new.');
+	para.appendChild(node);
+
+	var element = document.getElementById('div1');
+	element.appendChild(para);
+	window.open('Boolean.html');
+	window.close();
+</script>
+
+</body>
+</html>

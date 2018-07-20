@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add methods to a prototype</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+	function Person(first, last, age, eye) {
+		this.firstName = first;
+		this.lastName = last;
+		this.age = age;
+		this.eyeColor = eye;
+		this.name = function () {
+			return this.firstName + ' ' + this.lastName;
+		};
+	}
+var myFather = new Person('John', 'Doe', 43, 'brown');
+document.getElementById('demo').innerHTML = myFather.name();
+
+</script>
+
+</body>
+</html>

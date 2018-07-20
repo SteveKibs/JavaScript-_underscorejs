@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Use strict</title>
+</head>
+<body>
+<script type="text/javascript">
+	function doSomething() {
+		"use strict"; // variables named eval or arguments won't execute in strict mode
+		var evals = 1;
+		document.writeln(evals);
+
+	}
+	doSomething();
+
+	var myString = "HI", myBoolean = false, myInt = "32";
+	document.writeln(myString + myBoolean + myInt);
+</script>
+
+</body>
+</html>

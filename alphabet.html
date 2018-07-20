@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>string to alphabet position</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript">
+        // for every string letter, output its alphabetic position e,g a = 1, b = 2
+        var alpha = new Array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
+         var asignValue = new Object();
+        for (var i = 0; i < alpha.length; i++) {
+            var alph =alpha[i] ;
+
+        //alert(alph);
+
+           //alert(asignValue.alph);
+           //asignValue.alph[i];
+            var atVal = asignValue.alph = i + 1;
+           var str = "The sunset sets at twelve oclock";
+          // str.split('');alert(str);
+            for (var key in str) {
+                var key = str[key];
+                //alert(key);
+                var isValue = alph == key ;
+                if (isValue) {
+                    // statement
+
+                    document.writeln(key + "=" + atVal + "</br> ");
+                }
+
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

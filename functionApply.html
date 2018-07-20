@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	function sum(num1, num2) {
+		return num1 + num2;
+	}
+
+	function callSum1(num1,num2) {
+		return sum.apply(this, arguments); //passing in arguments object
+	}
+
+	function callSum2(num1, num2) {
+		return sum.apply(this, [num1, num2]); //passing in array
+
+	}
+	document.writeln(callSum1(10,10)); //20
+	document.writeln(callSum2(10, 15)); //25
+</script>

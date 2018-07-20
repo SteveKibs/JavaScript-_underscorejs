@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>adding new methods</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+	function person(firstName, lastName, age, eyeColor) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = Page;
+		this.eyeColor = eyeColor;
+		this.changeName = function (name) {
+			this.lastName = name;
+		};
+	}
+	var myMother = new person('Anne', 'Mimi', 43, 'brown');
+	myMother.changeName('Doe');
+	document.getElementById('demo').innerHTML = 'My mothers last name is ' + myMother.lastName;
+</script>
+
+</body>
+</html>

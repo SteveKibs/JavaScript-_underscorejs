@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		document.writeln(/cat/.test('a black cat'));  // true
+
+		//using \b boundary
+		document.writeln(/\bcat/.test('a black tomcat')); // false
+
+		//using \b
+		document.writeln(/cat\b/.test('a black tomcat')); // true
+		//using \b
+		document.writeln(/\bcat\b/.test('a black tomcat')); // false
+	
+	</script>
+</head>
+<body>
+
+</body>
+</html>

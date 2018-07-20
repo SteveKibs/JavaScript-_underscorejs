@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert parameter in a function</title>
+
+</head>
+<body>
+<script type="text/javascript">
+	function findMax(){
+		function findSum(){
+			var sum = 0;
+			if (arguments.length === 0){
+				return "no arguments sent";
+			}
+			for(var i=0; i<arguments.length;i++){
+				var num = arguments[i];
+				if(typeof num === "number"){
+					sum = sum + num;
+				}
+			}
+			return sum;
+		}
+	}
+	var sum1 = findSum(78,4,33,83,44);
+	document.write(sum1);
+</script>
+
+</body>
+</html>

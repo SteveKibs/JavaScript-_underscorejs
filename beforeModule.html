@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>code Before we implement module</title>
+    <script type="text/javascript">
+        var basicServerConfig = {
+            environment: "production",
+            startupParams: {
+                cacheTimeout: 30,
+                locale: "en_US"
+            },
+            init: function() {
+                document.writeln("Intializing the server");
+            },
+            updateStartup: function(params) {
+                this.startupParams = params;
+                document.writeln(this.startupParams.cacheTimeout);
+                document.writeln(this.startupParams.locale);
+            }
+        };
+        basicServerConfig.init(); // Initializing the server
+        basicServerConfig.updateStartup({cacheTimeout: 60, locale: "en_UK"});
+    </script>
+</head>
+<body>
+
+</body>
+</html>

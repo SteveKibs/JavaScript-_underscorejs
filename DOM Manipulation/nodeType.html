@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<pre id="results">
+	
+</pre>
+<script type="text/javascript">
+	var resultsElement = document.getElementById("results");
+	document.writeln("node type: "+resultsElement.nodeType);
+	document.writeln("node name: " + resultsElement.nodeName);
+	if (resultsElement.nodeType == Node.ELEMENT_NODE) {
+		// won't work in ie < 9
+		document.writeln("Node is an element");
+	}
+
+	if (resultsElement.nodeType == 1) {
+		//works for all
+		document.writeln("NOde is an element");
+	}
+</script>
+
+</body>
+</html>

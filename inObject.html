@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var book1 = {
+		name : "JavaScript"
+	};
+
+	var book2 = new Object();
+	book2.name = "JavaSrcipt";
+
+	book1.website = "google.com";
+	book2.website = "google.com";
+
+	book1.name = "CSS";
+	book2.name = "HTML";
+
+	document.writeln("name" in book1); //true
+</script>
+
+</body>
+</html>

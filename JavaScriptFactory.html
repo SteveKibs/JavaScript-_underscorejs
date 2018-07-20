@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	function createPerson(name, age, job) {
+		var o = new Object();
+		o.name = name;
+		o.age = age;
+		o.job = job;
+		o.sayName = function() {
+			document.writeln(this.name);
+		};
+		return o;
+	}
+
+	var person1 = createPerson('STEVE', 43, 'Engineer');
+	var person2 = createPerson('Anne', 42, 'Nurse');
+	document.writeln(person1.name);
+	document.writeln(person1.age);
+	document.writeln(person1.job);
+</script>

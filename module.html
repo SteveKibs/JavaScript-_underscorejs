@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var superModule = (function() {
+			var secret = 'supersecretkey';
+			var passcode = 'nuke';
+
+			function getSecret() {
+				document.writeln(secret);
+			}
+
+			function getPassCode() {
+				document.writeln(passcode);
+			}
+			return {
+				getSecret: getSecret,
+				getPassCode: getPassCode
+			};
+		})();
+		superModule.getSecret();
+		superModule.getPassCode();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

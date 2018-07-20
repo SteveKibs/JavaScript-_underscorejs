@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	(function() {
+		var name = '';
+		Person = function(value) {
+			name = value;
+		};
+		Person.prototype.getName = function() {
+			return name;
+		};
+		Person.prototype.setName = function(value) {
+			name = value;
+		};
+
+	})();
+
+	var person1 = new Person('CSS');
+	document.writeln(person1.getName());
+	person1.setName('HTMl');
+	document.writeln(person1.getName());
+</script>

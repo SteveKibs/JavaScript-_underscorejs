@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creating and using an object method</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script type="text/javascript">
+	var person = {firstName: 'John', lastName: 'Doe', id: 3344, fullName: function () {
+		return this.firstName + ' ' + this.lastName;
+	}
+};
+document.getElementById('demo').innerHTML = person.fullName();
+
+var message = "Hello world";
+var x = message.toUpperCase();
+document.writeln(x);
+</script>
+
+</body>
+</html>

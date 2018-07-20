@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function writeLineForAll() {
+		document.writeln(this.name);
+	}
+
+	var book1 = {
+		name : "JavaScript",
+		writeLine : writeLineForAll
+	};
+
+	var book2 = {
+		name : "CSS",
+		writeLine : writeLineForAll
+	};
+
+	var book3 = {
+		name : "HTML",
+		writeLine : writeLineForAll
+	};
+
+	var name = "VB";
+	book1.writeLine();
+	
+	writeLineForAll(); //VB
+</script>
+
+</body>
+</html>

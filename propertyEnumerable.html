@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var book1 = {
+		name : "JavaScript"
+	};
+
+	document.writeln("name" in book1);
+	document.writeln(book1.propertyIsEnumerable("name"));
+	var properties = Object.keys(book1);
+	document.writeln("length" in properties);
+	document.writeln(properties.propertyIsEnumerable("length")); //false
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var strToMatch = 'wooden bat, smelly Cat, a fat cat';
+		var re = /[bcf]at/gi;
+		var arrMatches = strToMatch.match(re);
+		document.writeln(arrMatches);
+
+		//or
+
+		var strToMatch = 'i1, i2, i3, i4, i5, i6, i7, i8, i9';
+		var re = /i[0-5]/gi;
+		var arrMatches = strToMatch.match(re);
+		document.writeln(arrMatches);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

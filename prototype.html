@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add new properties to an existing prototype</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+	function Person(first, last, age, eye) {
+		this.firstName = first;
+		this.lastName = last;
+		this.age = age;
+		this.eyeColor = eye;
+	}
+	Person.prototype.nationality = 'English';
+	var myFather = new Person('John', 'Doe', 45, 'brown');
+	document.getElementById('demo').innerHTML = 'My father is ' + myFather.nationality;
+</script>
+
+</body>
+</html>

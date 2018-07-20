@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var strToMatch = 'Blue is your favorite color?';
+		var regExAt = /Blue/;
+		document.writeln(strToMatch.replace(regExAt, "Red"));
+		// output = "red is your favorite color?"
+
+		// or using function parameter
+		var strToMatch = 'Blueis your favorite color?';
+		var regExAt = /Blue/;
+		document.writeln(strToMatch.replace(regExAt, function(matchingText) {
+			return 'Red ';
+		}));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

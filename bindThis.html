@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function writeLineForAll(label) {
+		document.writeln(label + ":" + this.name);
+
+	}
+
+	var book1 = {
+		name : "JavaScript"
+	};
+
+	var book2 = {
+		name : "CSS"
+	};
+
+	// create a function just for book1
+	var writeLineForPerson1 = writeLineForAll.bind(book1);
+	writeLineForPerson1("book1");
+
+	//create a function just for book2
+
+	var writeLineForPerson2 = writeLineForAll.bind(book2);
+	writeLineForPerson2("book2");
+</script>
+
+</body>
+</html>

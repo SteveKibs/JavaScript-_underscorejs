@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nonenumerable, nonconfigurable, nonwritable</title>
+</head>
+<body>
+<script type="text/javascript">
+	var book1 = {};
+
+	Object.defineProperty(book1, "name", {
+		value: "javascript"
+	});
+
+	document.writeln("name" in book1);  //true
+	document.writeln(book1.propertyIsEnumerable("name"));  //false
+	delete book1.name;
+	document.writeln("name" in book1);  //true
+
+	book1.name = "CSS";
+	document.writeln(book1.name);  //javascript
+</script>
+
+</body>
+</html>

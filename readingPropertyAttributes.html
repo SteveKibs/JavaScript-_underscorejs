@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	var book = {};
+	Object.defineProperties(book, {
+		_year: {
+			value: 2004
+		},
+		edition: {
+			value: 1
+		},
+		year: {
+			get: function() {
+				return this._year;
+			},
+			set: function(newValue) {
+				if (newValue > 2004) {
+					this._year = newValue;
+					this.edition += newValue - 2004;
+				}
+
+			}
+		}
+	});
+
+	var descriptor = Object.getOwnPropertyDescriptor(book, '_year');
+	document.writeln(descriptor.value);
+	document.writeln(descriptor.configurable)
+	document.writeln(typeof descriptor.get);
+
+	var descriptor = Object.getOwnPropertyDescriptor(book, 'year');
+	document.writeln(descriptor.value);
+	document.writeln(descriptor.enumerable);
+	document.writeln(typeof descriptor.get);
+</script>

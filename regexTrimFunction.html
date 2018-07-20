@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function trim(str) {
+			return(str || "").replace(/^\s+|\s+$/g, "");
+		}
+		document.writeln("--"+trim("      test     ")+"--"); // --test--
+
+		var re = /\s+/g;
+		document.writeln('there are    a lot     of spaces'.replace(re, ' '));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

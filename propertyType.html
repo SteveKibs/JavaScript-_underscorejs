@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var book1 = {
+		_name: "javascript",
+		get name() {
+			document.writeln("Reading name");
+			return this._name;
+		},
+
+		set name(value) {
+			document.writeln("Setting name to %s", value);
+			this._name = value;
+		}
+	};
+
+	document.writeln(book1.name);
+
+	book1.name = "CSS";
+	document.writeln(book1.name);
+
+</script>
+
+</body>
+</html>

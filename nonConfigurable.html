@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+//configurable property set to false means value property can't be removed from object
+	var person = {};
+	Object.defineProperty(person, "name", {
+		configurable: false,
+		value: "Nicholas"
+	});
+
+	alert(person.name);  //Nicholas
+
+	delete person.name;
+	alert(person.name);  //Nicholas
+</script>
+
+</body>
+</html>

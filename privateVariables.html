@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function privateTest() {
+			var points = 0;
+			this.getPoints = function() {
+				return points;
+			};
+			this.score = function() {
+				points++;
+			};
+		}
+
+		var private = new privateTest();
+		private.score();
+		document.writeln(private.points);
+		document.writeln(private.getPoints());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

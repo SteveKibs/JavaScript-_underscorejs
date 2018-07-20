@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	var stringValue = 'This is a test from, another test';
+	var positions = new Array();
+	var pos = stringValue.indexOf('e');
+	while (pos > -1) {
+		positions.push(pos);
+		pos = stringValue.indexOf('e', pos + 1);
+	}
+	document.writeln(positions);
+</script>

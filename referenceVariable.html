@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	function setName(obj) {
+		obj.name = 'XML';
+		obj = new Object();
+		obj.name = 'CSS';
+
+	}
+	var person  = new Object();
+	person.name = 'Steve';
+	document.writeln(person.name);
+	setName(person);
+	document.writeln(person.name); // XML
+
+</script>

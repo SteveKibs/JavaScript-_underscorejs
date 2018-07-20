@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using multi-dimensional array</title>
+</head>
+<body>
+<script type="text/javascript">
+	var patients = [
+			['John', 'Farmer', 'Carrots', ['Black', 'Football']],
+			['Rehema', 'Secretary', ['White', 'Swimming'], 'Mangoes'],
+			['Juma', 'Driver', 'Apples'],
+			['Mohammed', 'Pilot', 'Pizza']
+	];
+
+	document.writeln(patients[1][3]); //Mangoes
+
+	//Change patients[1][3][0] from Swimming to Athletics
+	document.writeln(patients[1][2][1] = 'Athletics');
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using JavaScript Objects</title>
+	<script type="text/javascript"></script>
+</head>
+<body>
+<p id="demo">hello </p>
+<script type="text/javascript">
+	var myObject, x, y, z;
+	myObject = {"name": "JOhn", "age": "30","city": "New York"};
+	x = myObject.name;
+	y = myObject["age"];
+	z = myObject.city ="Dubai";
+
+	document.getElementById('demo').innerHTML = x + " " +y +z;
+</script>
+
+</body>
+</html>

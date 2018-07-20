@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using NaN</title>
+</head>
+<body>
+<script type="text/javascript">
+	document.writeln(NaN/10);
+	document.writeln(NaN == 0);
+	document.writeln(NaN == NaN);
+
+	if ('a' != NaN) {
+		document.writeln('This is not a number');
+			}
+			else {
+				document.writeln("This is a number");
+			}
+			document.writeln(typeof NaN);
+			document.writeln(isNaN(NaN));
+			document.writeln(isNaN(20)); //20 is a number
+
+			var result = Number.MAX_VALUE + Number.MAX_VALUE;
+			document.writeln("Result is " + result); //false
+</script>
+
+</body>
+</html>

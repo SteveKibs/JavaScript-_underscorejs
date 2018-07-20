@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function Player() {}
+
+        Player.prototype.usesBat = function() {
+            return true;
+        };
+        // we call player() as a function and prove that nothing happens
+        var crazyBob = Player();
+        if (crazyBob === undefined) {
+            document.writeln("crazyBob is not defined");
+        }
+        // now call player() as a constructor along with 'new'
+        // the instance is created
+        // method usesBat() is derived from the prototype of the function
+        var swingJay = new Player();
+        if (swingJay && swingJay.usesBat && swingJay.usesBat()) {
+            document.writeln("swingJay exists and can use bat");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

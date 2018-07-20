@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<script type="text/javascript">
+    var _ = require('underscore');
+    // shared functionality encaspulated into a customlogger
+    var logger = (function() {
+        var CustomLogger = {
+            log: function(message) {
+                document.writeln(message);
+            }
+        };
+        return CustomLogger;
+    }());
+    // All object that will need the custom to log system specific logs
+    var Server = (function(Logger) {
+        var CustomerServer = function() {
+            this.init = function(){
+                this.log("Initializing Server...");
+            };
+        };
+        // This copies/extends the members of the 'customlogger' into 'CustomerServer'
+        _.extend(CustomerServer.prototype, Logger);
+        return CustomerServer;
+    }(logger));
+    (new Server()).init(); // Initializing Server..
+</script>
+</head>
+<body>
+
+</body>
+</html>

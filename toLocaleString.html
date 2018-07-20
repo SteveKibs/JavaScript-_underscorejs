@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+var person1 = {
+	toLocaleString : function () {
+		return 'toLocaleString 1';
+	},
+	toString : function () {
+		return 'toString 1';
+	}
+	};
+	var person2 = {
+		toLocaleString : function() {
+			return 'toLocaleString 2';
+		},
+		toString : function () {
+			return 'toString 2';
+		}
+	};
+	var people = [person1, person2];
+	document.writeln(people + '<br>');
+	document.writeln(people.toString() + '<br>');
+	document.writeln(people.toLocaleString());
+
+	</script>
+	</body>
+	</html>

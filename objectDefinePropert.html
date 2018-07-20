@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var person = {
+			firstname: "Albert",
+			lastname: "Einstein",
+		};
+		Object.defineProperty(person, 'fullname', {
+			get: function() {
+				return this.firstname + ' ' + this.lastname;
+			},
+			set: function(name) {
+				var words = name.split(' ');
+				this.firstname = words[0];
+				this.lastname = words[1];
+			}
+		});
+		person.fullname = "Steve Kibs";
+		document.writeln(person.firstname);
+		document.writeln(person.lastname);
+		document.writeln(person.fullname);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

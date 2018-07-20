@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		let data = true;
+
+		if (true) {
+			// enter new scope, Temporal Dead Zone starts
+			console.log(data); // true
+			let data; //tdz ends, 
+
+		}
+		console.log(data); // true
+	</script>
+</head>
+<body>
+
+</body>
+</html>

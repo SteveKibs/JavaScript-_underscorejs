@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var col1 = new Set();
+	col1.add('apple');
+	col1.add('oranges');
+	col1.add('bananas');
+	//adding more duplicate values will be ignored
+	//col1.add('apple'); //ignored
+	//col1.add('oranges'); //ignored
+	document.writeln(col1.size); //2
+	//use delete to delete set values
+
+	//col1.delete('oranges');
+	col1.forEach(function (value) {
+		document.writeln(value);
+	});
+</script>
+
+</body>
+</html>

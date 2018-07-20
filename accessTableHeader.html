@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {<!--  ww  w  . ja  v a2 s .co m-->
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<table>
+ <tr>
+   <th id="myTh">Name</th>
+ </tr>
+ <tr>
+   <td>cell</td>
+ </tr>
+</table>
+<button onclick="myFunction()">test</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    //var x = document.getElementById("myTh");
+    document.getElementById('myTh').innerHTML= 'New Table Head';
+    //x.innerHTML = "New Table Header";
+}
+</script>
+
+</body>
+</html>

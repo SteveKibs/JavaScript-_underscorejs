@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	(function () {
+		//private variables and functions
+		var privateVariable = 10;
+
+		function privateFunction() {
+			return false;
+		}
+		//constructor
+		MyObject = function() {
+
+		};
+		//public and privileged methods
+		MyObject.prototype.publicMethod = function() {
+			privateVariable++;
+			return privateFunction();
+		};
+	})();
+</script>

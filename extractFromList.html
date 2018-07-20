@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var str = 'Extract the following: Mercedez, BMW, Toyota, Peugeot, Mazda. I hope you succeed';
+	var start = str.indexOf(':');
+	var end = str.indexOf('.', start+1);
+	var cars = str.substring(start+1, end);
+	//var cars1 = str.substr(start+1, end - start); //using substr()
+	cars = cars.split(/\s*,\s*/);
+	//cars.forEach(function(elmnt, indx, arry) {
+	//	arry[indx] = elmnt.trim();
+	//});
+	document.writeln('cars = ' + cars); //split() splits the cars into individual values
+
+</script>
+
+</body>
+</html>

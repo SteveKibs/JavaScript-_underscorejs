@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":[],"mappings":"AAAA,IAAI,QAAQ,EAAZ;AAAA,IACA,QAAQ,IADR;AAAA,IAEA,UAAU,qDAFV;;AAIA,QAAQ,GAAR,CAAY,OAAZ","file":"script-compiled.js","sourcesContent":["let count = 10,\r\nprice = 0.25,\r\nmessage = '${count} items cost $${(count * price).toFixed(2)}.';\r\n\r\nconsole.log(message);"]}

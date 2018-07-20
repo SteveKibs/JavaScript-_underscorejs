@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var strToMatch = '123-456-7890';
+		var re = /[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9]/;
+		var arrMatches = strToMatch.match(re);
+		document.writeln(arrMatches);
+
+		//replace [0-9]with \d
+		var strToMatch = '123-456-7890';
+		var re = /\d\d\d-\d\d\d/;
+		var arrMatches = strToMatch.match(re);
+		document.writeln(arrMatches);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

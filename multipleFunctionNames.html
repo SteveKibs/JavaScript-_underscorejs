@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	function sum(num1, num2) {
+		return num1+num2;
+	}
+	document.writeln(sum(10,10));
+
+	var anotherSum = sum;
+	document.writeln(anotherSum(10,20));
+
+	sum = null;
+	document.writeln(anotherSum(21,34));
+</script>

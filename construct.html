@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Construct</title>
+</head>
+<body>
+<script type="text/javascript">
+	function Person(name, age, job) {
+		this.name = name;
+		this.age = age;
+		this.job = job;
+		this.sayName = function() {
+			document.writeln(this.name);
+		};
+	}
+	var person1 = new Person('XML', 29, 'Markup');
+	var person2 = new Person('CSS', 27, 'Style');
+	document.writeln(person1.name);
+	document.writeln(person1.age);
+	document.writeln(person1.job);
+	person1.sayName();
+</script>
+
+</body>
+</html>

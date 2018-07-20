@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+//Using the setMethod()
+	var newYear = new Date("January 1 2022");
+	document.writeln(newYear.setMonth(1));
+
+//Using toMethod()
+
+document.writeln(newYear.toDateString());
+
+// also remember to experiment the date with the following methods
+//newYear.toUTCString();
+//newYear.toLocaleTimeString();
+//newYear.toGMTString();
+//newYear.toJSON();
+
+
+//check this one out
+var location = window.location;
+document.writeln(location);
+
+//Using prompt
+var answer = prompt("What is another name for Sodium Chloride?", "Sugar");
+if (answer === 'table salt') {
+	alert('Congrats');
+}
+</script>
+
+</body>
+</html>

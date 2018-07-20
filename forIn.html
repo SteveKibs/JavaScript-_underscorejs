@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>for in loop in objects</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var txt = '';
+	var person = {fname: 'John', lname: 'Doe', age: 25};
+	var x;
+	for (x in person) {
+		txt += person[x] + ' ';
+
+	}
+	document.getElementById('demo').innerHTML = txt;
+</script>
+</body>
+</html>

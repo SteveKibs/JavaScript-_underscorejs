@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>using function expression</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+	var x = function(a, b) {  //anonymous function as it lacks a function name
+		return a * b;
+	}; // ends with a semicolon because it is an executable statement
+	document.getElementById('demo').innerHTML = x(3, 4);
+</script>
+
+</body>
+</html>

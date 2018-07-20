@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+//regular function scope
+	var price = 10; //Gloabl Declaration
+	function showPrice() {
+		var price = 12; //Local Declaration
+		document.writeln(price); //12
+
+	}
+	showPrice();
+	document.writeln(price); //10
+
+//function level scopes with IIFE
+
+	var price = 10; //Global Declaration
+	(function () {
+		var price = 12; //Local Declaration using var
+		document.writeln(price); //12
+	})();
+	document.writeln(price); //10
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	function callSomeFunction(someFunction, someArgument) {
+		return someFunction(someArgument);
+	}
+
+	function add10(num) {
+		return num + 10;
+	}
+
+	var result1 = callSomeFunction(add10, 10);
+	document.writeln(result1); //20
+
+	function addString(name) {
+		return 'Hello, ' + name;
+	}
+
+	var result2 = callSomeFunction(addString, 'XML');
+	document.writeln(result2);
+</script>

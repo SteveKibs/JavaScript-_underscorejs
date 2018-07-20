@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>anonymous function</title>
+	<script type="text/javascript">
+		function myName(fname, lname) {
+			var nam = document.write("My name is " + fname + " " + lname);
+			return nam;
+		}
+		function ask() {
+			var res = myName(prompt("Firstname"), prompt("Last name",));
+			return res;
+		}
+
+		var tell = function() {
+			ask();
+		}
+		tell();
+	</script>
+</head>
+<body>
+<p>
+	
+</p>
+
+</body>
+</html>

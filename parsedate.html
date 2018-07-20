@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date.parse(string) returns milliseconds.</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+var msec = Date.parse("March 21, 2012");
+var d = new Date(msec);
+document.getElementById('demo').innerHTML = d;
+</script>
+</body>
+</html>

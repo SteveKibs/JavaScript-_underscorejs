@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var str = "This is a list of items: cherries, limes, oranges, apples.";
+	var start = str.indexOf(":");
+	var end = str.indexOf(".", start+1);
+	var listStr = str.substring(start+1, end);
+	var fruits = listStr.split(",");
+	fruits.forEach(function(elmnt,indx,arry) {
+		arry[indx] = elmnt.trim();
+	});
+	document.writeln(fruits);
+</script>
+
+</body>
+</html>

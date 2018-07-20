@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Format document using JavaScript</title>
+</head>
+<body>
+<div>We want this Div Formatted please</div>
+<script type="text/javascript">
+	var sheet = document.createElement('style');
+	sheet.innerHTML = "div{fontSize = 'xx-large'; background-color: green;}";
+	document.body.appendChild(sheet);
+
+</script>
+
+</body>
+</html>

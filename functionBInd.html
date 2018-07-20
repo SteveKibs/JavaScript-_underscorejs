@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	window.myName= 'XML';
+	var o = { myName: 'CSS'};
+
+	function printMyName() {
+		document.writeln(this.myName);
+
+	}
+	var bindedPrintMyName = printMyName.bind(o);
+	bindedPrintMyName(); // CSS
+
+
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var person = {
+			fistname: "Albert",
+			lastname: "Einstein",
+			setFirstName: function(_firstname) {
+				this.firstname = _firstname;
+			},
+			setLastName: function(_lastname) {
+				this.lastname = _lastname;
+			},
+			getFullName: function() {
+				return this.firstname + ' ' + this.lastname;
+			},
+
+		};
+		person.setFirstName("Steve");
+		person.setLastName("Kibs");
+		document.writeln(person.getFullName());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

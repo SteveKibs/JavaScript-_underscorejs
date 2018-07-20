@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	function createFunctions() {
+		var result = new Array();
+		for (var i = 0; i < 10; i++) {
+			result[i] = function(num) {
+				return function() {
+					return num;
+				};
+			}(i);
+		}
+	}
+	document.writeln(createFunctions());
+</script>

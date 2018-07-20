@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function htmlEscape(text) {
+	return text.replace(/[<>"&]/g, function(match, pos, originalText) {
+		switch(match) {
+			case "<":
+			return "&lt;";
+			case ">":
+			return "&gt;";
+			case "&":
+			return "&amp;";
+			case "\"":
+			return "&quot;";
+		}
+	});
+	}
+	document.writeln(htmlEscape("<p class='myClass'> Hello World</p>"));
+
+</script>

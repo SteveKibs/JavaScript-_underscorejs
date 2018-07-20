@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>multiply or divide two numbers from user input</title>
+</head>
+<body>
+<form>
+	<label for="num1">1st Number
+		<input id="firstNumber" type="text">
+	</label><br>
+	<label for="num2">2nd Number
+		<input id="secondNumber" type="text">
+	</label>
+	<button onclick="multiply()">Multiply</button>
+	<button onclick="divideBy()">Divide</button>
+
+</form>
+<p>The Result is : <br>
+<span id="result"></span></p>
+<script type="text/javascript">
+	//
+	//create two functions to capture the two numbers input and return result
+	//
+	function divideBy()  {
+		num1 = document.getElementById("firstNumber").value;
+		num2 = document.getElementById("secondNumber").value;
+		document.getElementById("result").innerHTML = num1 / num2;
+
+	}
+
+</script>
+
+
+</body>
+</html>

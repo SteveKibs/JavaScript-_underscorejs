@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function Player() {
+            this.isAvailable = function() {
+                return "Instance method says - he is hired";
+            };
+        }
+        Player.prototype.isAvailable = function() {
+            return "Prototype methos says - he is not hired";
+        };
+        var crazyBob = new Player();
+        document.writeln(crazyBob.isAvailable());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

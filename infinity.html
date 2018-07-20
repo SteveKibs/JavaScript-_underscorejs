@@ -1,0 +1,23 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>infinity is returned if you calculate a number outside the largest possible number</title>
+</head>
+<body>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script type="text/javascript">
+	function myFunction(){
+		var myNumber = 2;
+		var txt = "";
+		while (myNumber != Infinity) {
+			myNumber = myNumber * myNumber;
+			txt = txt + myNumber + "<br>"
+		}
+		document.getElementById('demo').innerHTML = txt;
+	}
+</script>
+
+</body>
+</html>

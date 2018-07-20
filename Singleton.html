@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	var singleton = function() {
+		//private vairables and functions
+		var privateVariable = 10;
+		function privateFunction() {
+			return false;
+		}
+		//privileged/public methods and properties
+		return {
+			publicProperty: true,
+			publicMethod: function() {
+				privateVariable++;
+				return privateFunction();
+			}
+		};
+	}();
+</script>

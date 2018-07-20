@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	var person = {};
+	Object.defineProperty(person, 'name',{
+		writable: false,
+		value: 'XML'
+	});
+
+	document.writeln(person.name);
+
+	person.name = 'CSS'
+	document.writeln(person.name);
+
+
+
+	var num1 = 1.45;
+
+	var num2 = new Number(1.45);
+	document.writeln(typeof(num1), typeof(num2));
+</script>

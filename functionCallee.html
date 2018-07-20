@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	function factorial(num) {
+		if (num <= 1) {
+			return 1;
+		}
+		else {
+			return num * arguments.callee(num-1)
+		}
+	}
+	var trueFactorial = factorial;
+
+	factorial = function() {
+		return 2;
+	};
+
+	document.writeln(trueFactorial(5)); // 120
+	document.writeln(factorial(5)); //2
+</script>

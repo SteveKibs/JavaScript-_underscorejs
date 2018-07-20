@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function Employee() {
+			this.dept = 'None';
+			this.salary = 0.00;
+		}
+		Employee.prototype.name = '';
+		function Manager() {
+			this.reports = [];
+		}
+		Manager.prototype = new Employee();
+		var sandy = new Manager();
+		var karen = new Manager();
+		document.writeln(sandy.name);
+		document.writeln(karen.name);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using JavaScript to change Document Css</title>
+</head>
+<body>
+<div>This is the Div we want to change</div>
+<script type="text/javascript">
+	var sheet = document.createElement('style');
+	sheet.innerHTML = 'div{border:3px navy blue; background-color:yellow;}';
+	document.body.appendChild(sheet);
+
+</script>
+
+</body>
+</html>

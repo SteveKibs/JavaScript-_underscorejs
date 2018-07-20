@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Length</title>
+</head>
+<body>
+<script type="text/javascript">
+	function displayInfo(args) {
+		if (typeof args.name == 'string') {
+			document.writeln('Name: ' + args.name);
+		}
+		if (typeof args.pageSize == 'number') {
+			document.writeln('pageSize: ' + args.pageSize);
+		}
+	}
+	displayInfo({
+		name: 'JavaScript',
+		pageSize: 9
+	});
+	displayInfo({
+		name: 'HTML'
+	});
+</script>
